@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.topdeckstudios.magicstats.DeckCreationActivity">
+
+    <EditText
+        android:id="@+id/deck_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="DeckName" />
+
+    <Spinner
+        android:id="@+id/format"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deck_name"
+        android:layout_alignParentStart="true" />
+    <CheckBox android:id="@+id/owned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Owned?"
+        android:layout_below="@+id/format"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/save_button"
+        android:onClick="saveDeck"
+        android:layout_below="@+id/owned"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/cancel"
+        android:onClick="bootToMenu"
+        android:layout_alignTop="@+id/save_button"
+        android:layout_toEndOf="@+id/save_button" />
+</RelativeLayout>
