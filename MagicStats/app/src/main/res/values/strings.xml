@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MagicStats</string>
+
+        <string-array name="format">
+            <item>Standard</item>
+            <item>Modern</item>
+            <item>Vintage</item>
+            <item>Legacy</item>
+        </string-array>
+</resources>
