@@ -7,24 +7,12 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.topdeckstudios.magicstats.MainActivity">
+    tools:context="com.topdeckstudios.magicstats.ViewDecksActivity">
 
-
-    <Button
+    <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Make Deck"
-        android:id="@+id/create_deck"
-        android:onClick="createDeck"
+        android:id="@+id/decks"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View Decks"
-        android:id="@+id/view_decks"
-        android:onClick="viewDecks"
-        android:layout_alignTop="@+id/create_deck"
-        android:layout_toEndOf="@+id/create_deck" />
 </RelativeLayout>
