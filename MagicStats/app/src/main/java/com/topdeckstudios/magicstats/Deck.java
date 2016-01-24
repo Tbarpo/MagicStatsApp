@@ -19,7 +19,18 @@ public class Deck implements Serializable{
         this.owned = owned;
     }
 
+    public String getName() {
+        return name;
+    }
+    public String getFormat() {
+        return format;
+    }
+    public boolean getOwned() {
+        return owned;
+    }
+
     public boolean equals(Deck o){
         return this.name.compareTo(o.name)== 0 && this.format.compareTo(o.format)==0 && this.owned == o.owned;
     }
+
 }
